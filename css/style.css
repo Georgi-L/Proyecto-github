@@ -1,0 +1,429 @@
+/* CSS para el body en general*/
+h4 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  img {
+    text-align: center;
+  }
+  
+  section {
+    margin: 40px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: rgba(255, 255, 255, 0.75);
+    /* Fondo blanco con transparencia del 25% */
+    overflow: hidden;
+    padding: 35px;
+    border-radius: 10px;
+  }
+  body {
+    margin: 0;
+    background-image: url(imágenes/backgroundimage2.jpeg);
+    background-color: rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+  }
+  .container {
+    margin: 20px;
+  }
+  
+  
+  
+  /* CSS para header */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .logo {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  /* Barra de navegacion */
+  #navegacion {
+    margin-left: 670px;
+    font-size: 22px
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 2%;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    color: #2e8b57;
+  }
+  
+  /*Puse esto como comentario porque no interviene en nada y si lo ponemos solo interfiere con el hover de arriba -GEOR*/
+  /* header nav ul li a:visited {
+    color: #2e8b57;
+  }  */
+  
+  /* Estilos para el botón del dropdown */
+  .btn-custom {
+    background-color: #f2f2f2;
+    /* Color de fondo */
+    color: black;
+    /* Color del texto */
+    border: 1px black;
+    /* Borde del botón */
+  }
+  
+  .btn-custom:hover,
+  .btn-custom:focus {
+    background-color: #f2f2f2;
+    /* Color de fondo al pasar el mouse o enfocar el botón */
+    border: 1px solid black;
+    /* Borde del botón al pasar el mouse o enfocar */
+  }
+  
+  /* Estilos para el menú desplegable del dropdown */
+  .dropdown-menu-custom {
+    background-color: #343a40;
+    /* Color de fondo del menú */
+    color: #FFFFFF;
+    /* Color del texto del menú */
+  }
+  
+  .dropdown-item.active,
+  .dropdown-item:active {
+    background-color: #2e8b57;
+    /* Color de fondo del elemento activo */
+  }
+  
+  .dropdown-divider {
+    border-top-color: #6c757d;
+    /* Color del separador */
+  }
+  
+  
+  
+  /*CSS para el primer carousel*/
+  /* Agregar una transición de desvanecimiento (fade) al carrusel */
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel-fade .carousel-item.active {
+    opacity: 1;
+  }
+  
+  
+  
+  /* CSS para card */
+  .card {
+    margin: auto;
+    border: 2px solid;
+  }
+  
+  
+  
+  /* CSS para la galeria de imagenes */
+  .carousel img {
+    width: 500px;
+    size-adjust: 100px;
+  }
+  
+  .carousel h4 {
+    text-align: center;
+  }
+  
+  .carousel {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  /* Estilo para las imágenes del carrusel */
+  .carousel-inner img {
+    width: 100%;
+    height: 500px;
+    /* Establece el alto deseado de las imágenes */
+    object-fit: cover;
+    /* Ajusta la imagen manteniendo la proporción */
+  }
+  
+  /* Estilo para el texto de las diapositivas */
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+  }
+  
+  /* Estilo para los controles de navegación del carrusel */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black;
+    /* Color del ícono de navegación */
+  }
+  
+  
+  
+  /* CSS para el formulario */
+  .formulario-container {
+    padding-top: 15px;
+    text-align: center;
+    margin: auto;
+    width: 58%;
+    height: 86%;
+  }
+  
+  .formulario-container input {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 4%;
+    width: 42%;
+    height: 20%;
+    border-radius: 5%;
+  }
+  
+  .formulario-container form input[type="submit"] {
+    width: 35%;
+  }
+  
+  .formulario-container .COLOR:valid {
+    background-color: rgb(36, 160, 36);
+  }
+  
+  .formulario-container input:focus {
+    background-color: #c6c639;
+  }
+  
+  .formulario-container input:hover {
+    background-color: rgb(44, 29, 243);
+  }
+  
+  .formulario-container #Final form input[type="submit"] {
+    width: 15%;
+  }
+  
+  /* CSS para boton del form */
+  .formulario-container .button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .formulario-container .button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+  
+  
+  
+  /* CSS para la seccion de noticias */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    width: 300px;
+    /* Establecer un ancho deseado */
+    object-fit: contain;
+    /* Ajustar la imagen manteniendo la proporción */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-title {
+    /* Estilos para el título de la noticia */
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    /* Estilos para el texto de la noticia */
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    /* Estilos para el botón */
+    display: block;
+    margin: 0 auto;
+    /* Centrar horizontalmente el botón */
+  }
+  
+  
+  
+  /* CSS para el footer */
+  footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .social-links li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .social-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  .social-links li a:hover {
+    color: #2e8b57;
+  }
+  
+  .social-links li a:active {
+    color: #ff0000;
+  }
+  
+  /* CSS para los testimonios */
+  .testimonios {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .testimonio {
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .testimonio img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .testimonio h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .testimonio p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  /* Estilos de las flechas para cambiar de testimonio */
+  .flechas {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .flechas span {
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .paises {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    transition: 0.3s;
+  }
+    .paises:hover {
+    border-bottom: 2px solid blue;
+  }
